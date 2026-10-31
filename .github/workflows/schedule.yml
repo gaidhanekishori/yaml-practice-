@@ -1,0 +1,13 @@
+
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print welcome message
+        run: echo 'Welcome to GitHub Actions'
